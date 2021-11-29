@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>USER DASHBOARD</title>
+	<link rel="stylesheet" type="text/css" href="user_dashboard.css">
+</head>
+<body>
+	<div class="container">
+		<div class="navigation">
+			<ul>
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="car-sport-outline"></span>
+						<span class="title"></ion-icon>CAR POOLING</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="home-outline"></span>
+						<span class="title"></ion-icon>Dashboard</span>
+					</a>
+				</li>
+				<!-- <li>
+					<a href="#">
+						<span class="icon"><ion-icon name="people-outline"></span>
+						<span class="title"></ion-icon>Customers</span>
+					</a>
+				</li> -->
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
+						<span class="title">Message</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+						<span class="title">Help</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+						<span class="title">Settings</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+						<span class="title">Password</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+						<span class="title">Sign Out</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="main">
+			<div class="topbar">
+				<div class="toggle">
+					<ion-icon name="menu-outline"></ion-icon>
+				</div>
+				<!-- SEARCH -->
+				<div class="search">
+					<label>
+						<input type="text" placeholder="Search Here">
+						<ion-icon name="search-outline"></ion-icon>
+					</label>
+				</div>
+				<!-- USERIMG-->
+				<div class="user">
+					<img src="images/user.jpg">
+				</div>
+			</div>	
+
+			<!-- CARDS -->
+			<div class="cardBox">
+				<!-- <div class="card">
+					<div>
+						<div class="numbers">1,504</div>
+						<div class="cardName">Total Passengers</div>
+					</div>
+					<div class="iconBx">
+						<ion-icon name="walk-outline"></ion-icon>
+					</div>
+				</div> -->
+				<div class="card">
+					<div>
+						<div class="numbers">XYZ-123</div>
+						<div class="cardName">Car Details</div>
+					</div>
+					<div class="iconBx">
+						<ion-icon name="car-sport-outline"></ion-icon>
+					</div>
+				</div>
+				<div class="card">
+					<div>
+						<div class="numbers">284</div>
+						<div class="cardName">Comments</div>
+					</div>
+					<div class="iconBx">
+						<ion-icon name="chatbubbles-outline"></ion-icon>
+					</div>
+				</div>
+				<div class="card">
+					<div>
+						<div class="numbers">Rs. 700.50</div>
+						<div class="cardName">Amout to pay</div>
+					</div>
+					<div class="iconBx">
+						<ion-icon name="cash-outline"></ion-icon>
+					</div>
+				</div>
+			</div>
+
+			<!-- data list -->
+			<div class="details">
+				<div class="recentorders">
+					<div class="cardHeader">
+						<h2>TRACK ROUTE</h2>
+					</div><br><br>
+					<table>
+						<img src="images/user_route2.png">
+					</table>
+				</div>
+
+				<!-- New customers -->
+				<div class="recentCustomers">
+					<div class="cardHeader">
+						<h2>TRAVELLING WITH ME</h2>
+					</div>
+					<table><tr>
+						<!-- <tr> -->
+							<td width="60px"><div class="imgBx"><img src="images/img1.jpg"></div></td>
+							<td><h4>David<br><span>Patparganj</span></h4></td>
+						<!-- </tr>
+						<tr> -->
+							<td width="60px"><div class="imgBx"><img src="images/img2.jpg"></div></td>
+							<td><h4>Alex<br><span>Vasundhara</span></h4></td>
+						<!-- </tr>
+						<tr> -->
+							<td width="60px"><div class="imgBx"><img src="images/img3.jpg"></div></td>
+							<td><h4>Diana<br><span>Mayur Vihar</span></h4></td>
+						<!-- </tr>
+						<tr> -->
+							<td width="60px"><div class="imgBx"><img src="images/img4.jpg"></div></td>
+							<td><h4>Alexa<br><span>Pushp Vihar</span></h4></td>
+						<!-- </tr>
+						<tr> -->
+							<td width="60px"><div class="imgBx"><img src="images/img5.jpg"></div></td>
+							<td><h4>Liam<br><span>Gurugram</span></h4></td>
+						<!-- </tr>
+						<tr> -->
+							<td width="60px"><div class="imgBx"><img src="images/img6.jpg"></div></td>
+							<td><h4>Oliver<br><span>Noida</span></h4></td>
+						<!-- </tr> -->
+					</tr></table>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+	<script type="text/javascript">
+		//Menu Toggle
+		let toggle=document.querySelector('.toggle');
+		let navigation=document.querySelector('.navigation');
+		let main=document.querySelector('.main');
+
+		toggle.onclick=function(){
+			navigation.classList.toggle('active');
+			main.classList.toggle('active');
+		}
+
+		// add hovered class in selected list item
+		let list=document.querySelectorAll('.navigation li');
+		function activeLink(){
+			list.forEach((item)=>
+				item.classList.remove('hovered'));
+				this.classList.add('hovered');
+		}
+		list.forEach((item)=>
+			item.addEventListener('mouseover',activeLink));
+
+	</script>
+
+</body>
+</html>

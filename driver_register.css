@@ -7,7 +7,7 @@
 	background-color: #E2FBFB;
 }
 body,html{
-    background-image: url(img2.jpeg);
+    /*background-image: url(img2.jpeg);*/
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -22,8 +22,8 @@ section{
 }
 section .imgBx{
 	position: relative;
-	width: 50%;
-	height: 100%;
+	width: 60%;
+	height: 170%;
 }
 section .imgBx:before{
 	content: '';
@@ -47,9 +47,9 @@ section .imgBx img{
 section .contentBx{
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	/*align-items: center;*/
 	width: 50%;
-	height: 100%;
+	/*height: 100%;*/
 }
 section .contentBx .formBx h2{
 	color: #607d8b;
@@ -60,6 +60,7 @@ section .contentBx .formBx h2{
 	border-bottom: 4px solid #ff4584;
 	display: inline-block;
 	letter-spacing: 1px;
+	/*height: 100vh;*/
 }
 section .contentBx .formBx .inputBx{
 	margin-bottom: 20px;

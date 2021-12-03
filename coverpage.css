@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Signika&display=swap');
+*{
+	border: 0;
+	padding: 0;
+}
+.topnavbar{
+	background: linear-gradient(to bottom right, #164F82, black);
+	font-family: 'Acme', sans-serif;
+}
+.text_top{
+	font-size: 1.5em;
+}
+.carbooking{
+	color: white;
+}

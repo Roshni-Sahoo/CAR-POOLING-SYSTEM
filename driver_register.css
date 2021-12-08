@@ -22,7 +22,7 @@ section{
 }
 section .imgBx{
 	position: relative;
-	width: 60%;
+	width: 50%;
 	height: 170%;
 }
 section .imgBx:before{
